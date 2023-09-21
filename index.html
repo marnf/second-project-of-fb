@@ -3,9 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sidebar</title>
+    <title>personal Site</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
-</body>
+    <body>
+
+        <div class=" h-screen flex   ">
+
+        <header style="width: 35%;" class=" bg-slate-900">
+            <div class="text-center text-white  ">
+                 <p class="font-sans mt-14 mb-16 text-4xl p-4 "><span class="font-serif">M</span>ustafij Masuma</p>
+            </div>
+          
+            <div>
+                <ul class="text-center font-semibold  text-gray-400 ">
+
+                    <li  class=" cursor-pointer pl-4 pr-4 pt-4 pb-2 m-2 "><a class=" hover:text-white" onclick="homeClicked()"><i class="fa-solid fa-house-chimney"></i> home</a></li>
+
+                    <li class=" cursor-pointer pb-4 m-2 pt-4"><a class=" hover:text-white" onclick="aboutClicked()" >
+                            <i class="fa-solid fa-user"></i> about</a> </li>
+
+                    <li  class=" cursor-pointer pb-4 m-2 pt-4"><a class=" hover:text-white" onclick="menuClicked()" ><i class="fa-solid fa-bars"></i> menu</a></li>
+
+                    <li  class=" cursor-pointer pb-4 m-2 pt-4"><a class=" hover:text-white" onclick="jobClicked()"><i class="fa-solid fa-briefcase"></i> job</a></li>
+
+                    <li  class=" cursor-pointer pb-10 m-2 pt-4"><a class=" hover:text-white" onclick="contactClicked()"><i class="fa-solid fa-comments"></i> contact</a></li>
+                    
+                </ul>
+            </div>
+
+        </header>
+
+        <footer class="flex-auto w-65% bg-slate-950 text-gray-200 relative p-7 ">
+            
+                <div class="home-div  ">
+                    <h1 class="text-center text-7xl">home</h1>          
+                </div>
+           
+        </footer> 
+
+        <div>
+
+                <div id="mySidenav-about" class="sidenav opend">
+                    <a href="javascript:void(0)"></a> 
+                    <h1 class="text-7xl text-center" style="color: aliceblue;">about</h1>   
+                </div>
+            
+                <div id="mySidenav-menu" class="sidenav opend">
+                    <a href="javascript:void(0)"></a> 
+                    <h1 class="text-7xl text-center" style="color: aliceblue;">menu</h1>   
+                </div>
+            
+                <div id="mySidenav-job" class="sidenav opend">
+                    <a href="javascript:void(0)"></a> 
+                    <h1 class="text-7xl text-center" style="color: aliceblue;">job</h1>   
+                </div>
+            
+                <div id="mySidenav-contact" class="sidenav opend">
+                    <a href="javascript:void(0)"></a> 
+                    <h1 class="text-7xl text-center" style="color: aliceblue;">contact</h1>   
+                </div>
+
+
+
+        </div>
+
+        <!-- js section -->
+
+        <script src="index.js"></script>
+
+    </body>
 </html>
